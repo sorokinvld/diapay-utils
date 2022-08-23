@@ -47,7 +47,7 @@
     ],
     "nodes": [
       {
-        "url": "ws://chain.dialogmessenger.ru:9944",
+        "url": "wss://coin.dialogmessenger.ru",
         "name": "Dialog Masterchain node"
       },
       {
