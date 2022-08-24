@@ -47,16 +47,16 @@
     ],
     "nodes": [
       {
-        "url": "wss://coin.dialogmessenger.ru/parachain",
-        "name": "wss://coin.dialogmessenger.ru/parachain"
+        "url": "wss://polkadot.api.onfinality.io/ws?apikey=313214ec-15ef-4834-a896-1cf39911f94b",
+        "name": "OnFinality node"
       },
       {
-        "url": "wss://coin.dialogmessenger.ru/parachain",
-        "name": "wss://coin.dialogmessenger.ru/parachain"
+        "url": "wss://rpc.polkadot.io",
+        "name": "Parity node"
       },
       {
         "url": "wss://polkadot-rpc.dwellir.com",
-        "name": "wss://coin.dialogmessenger.ru/parachain"
+        "name": "Dwellir node"
       }
     ],
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Polkadot.svg",
@@ -135,7 +135,8 @@
       "overridesCommon": true
     },
     "options": [
-      "crowdloans"
+      "crowdloans",
+      "poolStaking"
     ]
   },
   {
@@ -193,7 +194,8 @@
     },
     "options": [
       "testnet",
-      "crowdloans"
+      "crowdloans",
+      "poolStaking"
     ]
   },
   {
@@ -1982,6 +1984,34 @@
         }
     },
     {
+        "chainId": "0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Turing Network",
+        "externalApi": {
+             "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/soramitsu/fearless-wallet-turing"
+            }
+        },
+        "assets": [
+            {
+                "assetId": "148ce615-aea3-42fa-be45-5eb5606813b8"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.turing.oak.tech",
+                "name": "OAK node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/OAK.svg",
+        "addressPrefix": 51,
+        "types": {
+            "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/type_registry/turing.json",
+            "overridesCommon": true
+        }
+    },
+    {
       "chainId": "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b",
       "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
       "name": "Encointer on Kusama",
@@ -2008,25 +2038,25 @@
       }
     },
     {
-        "chainId": "0e06260459b4f9034aba0a75108c08ed73ea51d2763562749b1d3600986c4ea5",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Pichiu Network",
-        "assets": [
-          {
-            "assetId": "5b196f7c-475a-493e-abbf-9f808d6fb863"
-          }
-        ],
-        "nodes": [
-          {
-            "url": "wss://kusama.kylin-node.co.uk",
-            "name": "Kylin Network node"
-          }
-        ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/pichiu.svg",
-        "addressPrefix": 42,
-        "types": {
-          "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/type_registry/pichiu.json",
-          "overridesCommon": true
+      "chainId": "0e06260459b4f9034aba0a75108c08ed73ea51d2763562749b1d3600986c4ea5",
+      "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+      "name": "Pichiu Network",
+      "assets": [
+        {
+          "assetId": "5b196f7c-475a-493e-abbf-9f808d6fb863"
         }
+      ],
+      "nodes": [
+        {
+          "url": "wss://kusama.kylin-node.co.uk",
+          "name": "Kylin Network node"
+        }
+      ],
+      "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/pichiu.svg",
+      "addressPrefix": 42,
+      "types": {
+        "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/type_registry/pichiu.json",
+        "overridesCommon": true
       }
+    }
 ]
