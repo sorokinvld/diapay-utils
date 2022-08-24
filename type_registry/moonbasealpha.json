@@ -1,5 +1,5 @@
 {
-    "runtime_id": 1300,
+    "runtime_id": 1102,
     "types": {},
     "versioning": [
         {
@@ -10,7 +10,7 @@
             "types": {
                 "Balance": "u128",
                 "Index": "u32",
-                "Phase": "134",
+                "Phase": "131",
                 "H160": "[u8; 20]",
                 "0": "H160",
                 "Address": "0",
@@ -32,18 +32,10 @@
                     ]
                 },
                 "ExtrinsicSignature": "EthereumSignature",
-                "ParaId": "80",
-                "18": "GenericEvent",
-                "155": "GenericCall"
+                "ParaId": "164",
+                "21": "GenericEvent",
+                "152": "GenericCall"
             }
         }
-    ],
-    "overrides": [
-      {
-        "module": "Babe",
-        "constants": [
-          { "name": "ExpectedBlockTime", "value": "12000" }
-        ]
-      }
     ]
 }
